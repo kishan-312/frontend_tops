@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratin form</title>
+</head>
+<body style="padding: 0;margin: 0;box-sizing: border-box;">
+    <main>
+        <section style="width: 100%;" >
+            <!-- form --> 
+                <form action="#" method="post"  style="width: 60%;background-color: #bca0d6 ;padding: 30px;margin: 0 auto;">
+                    <fieldset style="border-color: black;">
+                        <legend style=" color: black;margin: 0 auto;font-weight: bold;">Registration Details</legend>
+                        <div style="max-width: 700px;width: 100%;margin: 0 auto;padding: 20px;">
+                            <!-- background-color: aquamarine; -->
+                            <div style="margin: 20px 0;display: flex; gap: 20px;width: 100%;">
+                                <label for="university" style="width: 30%;text-align: end;" >Unversity:</label>
+                                <input type="text" style="width: 70%;" required placeholder="University Name" id="university">
+                            </div>
+                            <div style="margin: 20px 0;display: flex; gap: 20px;width: 100%;">
+                                <label for="institute" style="width: 30%;text-align: end;" >Institute:</label>
+                                <input type="text" placeholder="Institute Name" required style="width: 70%;"  id="institute">
+                            </div>
+                            <div style="margin: 20px 0;display: flex; gap: 20px;width: 100%;">
+                                <label for="branch" style="width: 30%;text-align: end;" >Branch:</label>
+                                <select name="" id="branch" style="width: 70%;" required>
+                                    <option value="--select option--">--select option--</option>
+                                    <option value="tops surat">tops surat</option>
+                                    <option value="tops ahmedabad">tops ahmedabad</option>
+                                    <option value="tops rajkot">tops rajkot</option>
+                                </select>
+                            </div>
+                            <div style="margin: 20px 0;display: flex; gap: 20px;width: 100%;">
+                                <label for="degree" style="width: 30%;text-align: end;" >Degree:</label>
+                                <div style="width: 70%;">
+                                    <select name="" id="degree" required >
+                                        <option value="--select option--">--select option--</option>
+                                        <option value="ec">ec</option>
+                                        <option value="cs">cs</option>
+                                        <option value="mech">mech</option>
+                                    </select>
+                                    <input type="radio" name="degree" required id="pursuing">
+                                    <label for="pursuing">Pursuing</label>
+                                    <input type="radio" name="degree" required id="completed">
+                                    <label for="completed">completed</label>
+                                </div>
+                            </div>
+                            <div style="margin: 20px 0;display: flex; gap: 20px;width: 100%;">
+                                <label for="average" style="width: 30%;text-align: end;" >Average CPI:</label>
+                                <div style="width: 70%;display: flex;gap: 5px;">
+                                   <div style="width: 50%;">
+                                    <input type="text" name="upto" required id="average">
+                                    <span for="upto">Upto</span>
+                                   </div>
+                                   <div style="width: 50%;">
+                                    <input type="text" name="th semster" required id="average">
+                                    <span for="th_semster">Th Semster</span>
+                                   </div>
+                                </div>
+                            </div>
+                            <div style="margin: 20px 0;display: flex; gap: 20px;width: 100%;"  >
+                                <label for="experience" style="width: 30%;text-align: end;" >Experience:</label>
+                                <div  style="width: 70%;">
+                                    <input type="text" placeholder="experience"  required id="experience">
+                                    <span>Years</span>
+                                </div>
+
+                            </div>
+                            <div style="margin: 20px 0;display: flex; gap: 20px;width: 100%;"  >
+                                <label for="blog" style="width: 30%;text-align: end;" >Your website or blog:</label>
+                                <input type="url" placeholder="https://www.google.com" required style="width: 70%;" id="blog">
+                                
+                            </div>
+                            <div style="margin: 20px 0;display: flex; gap: 20px;width: 100%;" > 
+                                <button style="margin: 0 auto;border: 1px solid black;padding: 7px 15px;background-color: #d06060;">Register</button>
+                            </div>
+
+                        </div>
+                    </fieldset>
+                </form>
+        </section>
+    </main>
+</body>
+</html>
+
