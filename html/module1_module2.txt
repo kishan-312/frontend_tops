@@ -1,0 +1,229 @@
+### Front-end Assignment Set
+
+## Module - 1 Foundation,Fundamentals of World Wide Web,Fundamentals of IT
+
+
+
+#* Section - 1 : Foundation
+
+
+# Theory exercise =========================================================
+
+1. What is http ?
+->
+- http stands for hypertext transfer protocol . 
+- use for data-communication on the web. device communicate with  other devices
+- ex. when u type something in search engine in browser, so browser act as client and this request send to server 
+  server process this data and give response back to client 
+- http use different methods like get,post,delete,put for reterive,send,delete,update data  
+
+2. What is a browsers ? How they works ?
+->
+- Browser is software application use for access website from internet/web, also u can interact with website 
+- Different types of browsers available like Google Chrome,Mozila Firefox,Microsoft Edge,Brave,Apple Safari
+
+- Here's a step by step process how browser works :
+* Client request for website
+- When u type something in address bar of browser,and click enter, process of reteriving data start.
+* DNS
+- what u type in addressbar computer not understand. so browser contact dns that convert address to ipaddress. 
+* Server
+- browser send http/https request send to the server hosting website using ip address
+* Respond of server to browser
+- server process request and respond back to browser via files, this files browser download 
+* Render website
+- browser process this files and display website
+
+3. What is domain name ?
+->
+- Domain name is like human-readable address that use for access website from internet .
+- when u type domain name in search engine or addressbar , but this not understand computer , computer communicate with
+ip address, so browser contact dns , dns convert domain name into ip address. browser sends ip address to server and loads website
+- Domain name like google.com , here google is second-level domain and .com is Top-level domain 
+- u can buy domain name from  different website like GoDaddy,BlueHost,HostGator  etc.
+
+4. what is hosting ?
+->
+- hosting is a service that give access of websites on internet . 
+- when u build website , u create different files like HTML,CSS,JS etc. this files u stored in server . this
+server access using hosting , domain name also linked with this server , when u type something server server deliver files
+- u can buy hosting from websites like GoDaddy,BlueHost,HostGator etc
+- hosting provides disk space,bandwidth,uptime etc 
+
+
+
+# Lab exercise =========================================================
+
+1. Create Github account & make repository.
+->
+- https://github.com/kishan-312
+
+
+
+
+
+
+#* Section - 2 : Fundamentals of World Wide Web
+
+
+
+# Theory exercise =========================================================
+
+1. Difference between Web Designer and Web Developer
+->
+- WebDesigner and Web Developer both are essential for creating website . 
+
+* WebDesigner 
+- Focus on website look and feel
+- Responsible for Designing layout,ui (user interface) and aesthetic appeal of website
+- tools and language use for designing like html,css for responsive website and look , and some others
+tools like figma,Adobe photoshop etc
+- designer role website looking good,aesthetically pleasure,navigate easily , visual aspects,layout,how user interact
+
+* WebDeveloper 
+- focus on functionality and operation of the website
+- web developer provide quickly load, interactive website, communication client with server 
+- key responsibility like front-end development (using html,css and js website look good and feel good and interactive ,
+responsive, quickly loading etc), back-end development ( create server side logic , store data in database , handle user requests ),
+Mern-stack Developer (MongoDB,Express,React,NodeJS = Front-end and backend both), FullStack Developer ( Front-end and Backend )
+
+2. What is W3C ?
+->
+- W3C stands for WorldWideWeb Consortium , which is an international community which develop and maintain standards
+- purpose of w3c is a consistent growth of web , by creating standards that ensure the web works across different devices,technology 
+and platforms ,  standards help improve functionality , accessiblity , usability of web 
+- standards for webtechnologies like html,css,xml etc to ensure consistency and compatiblity across different browsers and devices
+- w3c works on standards that ensure that web accessible to peoplw with disabilities
+- w3c also developing guidlines to protect and secure data 
+- website perform well(quick load,optimization) across all environments 
+- some important standards like HTML(Structuring Content on web),CSS(Styling and designing webpages),XML(data exchange between systems)
+,svg(creating vector-based graphices) , wcag(website accessible for people with disabilities)
+
+3. What is Domain ?
+->
+- domain is like human-readable address that identifies website or resource on internet 
+
+4. What is SEO ?
+->
+- seo stands for search engine optimization which is the practice of optimizing websites or webpages to improve visibility and 
+ranking of website in search engines like google,bing,yahoo  etc .
+- goal of seo is increase quality and quantity of traffic of website through organic search engine results 
+- when you search something in search engine , so we click most of time who see in top of search web pages
+- websites of higher ranking means more engaging website show top of search engine result pages
+- seo use to increase website traffic,ranking website high , more and more people view , more engagement , increase sales,signup 
+and inquires ( potential conversions )
+
+5. What is SDLC life cycle?
+->
+- sdlc stands for software development life cycle is process in software development to plan,create,testing and deploy software
+- this method use for in structured way work in software development , so that final project is high quality , meets user requirements,
+delivered on time and within budget 
+
+- phases of sdlc 
+* planning
+- purpose of software application
+- set of objective 
+- within budget
+- timing
+
+* requirements
+- features required
+- structure of app
+
+* designing
+- look and feel good
+- visual aspects
+- aesthetically pleasure
+- layout
+
+* development
+- focus on functionality and operation of app
+
+* testing
+- compatibility 
+- accessiblity
+- fix bugs
+- meets user requirements
+- within budget
+
+* deployment
+- fully operational software available to users
+
+* maintenance
+- continued support and improvement of the software
+
+
+# Lab exercise =========================================================
+
+1. Explain phases of SDLC life cycle.
+-> phases of sdlc life cycle are below :
+
+* planning 
+- purpose of website
+- set objective
+- within budget 
+- timing
+
+* requirements
+- features of application
+- branding fonts,color etc
+
+* designing
+- visual aspects
+- layout
+- feel and look good
+- aesthetically pleasure
+
+* development
+- focus on functionality and operation of app
+
+* testing
+- fix bugs
+- compatibility
+- accessiblity
+- within budget
+- meets user requirements
+
+* deployment
+- fully operational software available for user
+
+* maintenance
+- continued support and improvement of the software
+
+#* Section - 3 :  Fundamentals of IT
+
+# what is Program ?  =========================================================
+
+LAB EXERCISE :  Write a simple "Hello World" program in two different programming languages of your choice.
+Compare the structure and syntax.
+
+-> hello world program in javascript vs python
+
+* javascript
+- console.log("Hello World!");
+- logs output to console 
+- no need of semicolon(;) only use for complete statement
+- for many statements need block ( {} )
+
+* python
+- print("Hello World!")
+- for many statements need indentation ( : )
+
+THEORY EXERCISE: Explain in your own words what a program is and how it functions.
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
