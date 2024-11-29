@@ -1,0 +1,109 @@
+
+======================= HTML BASICS =======================
+
+
+
+Question 1: Define HTML. What is the purpose of HTML in web development?
+
+-->
+
+- HTML stands for "hypertext markup language" . 
+- markup language used for structuring webpages 
+- webpage contains series of element
+- HTML element tell the browser how to display the content
+
+======================= *** =======================
+
+Question 2: Explain the basic structure of an HTML document. Identify the mandatory tags and
+their purposes.
+
+-->
+
+- basic structure of HTML document are below :
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HTML Document </title>
+ 
+</head>
+<body>
+
+    <p> hello kishan </p>
+
+</body>
+</html>
+
+1. <!DOCTYPE html> - this document is an html5  document ( means type of document like html-5,html-4.01 )
+2. <html lang="en"> - root element of document , it contains two sections 2.1 head 2.2 body
+3. <head> - this section contains title of webpage,meta tag so basically meta informaation about the HTML page
+4. <meta> - information about page . use for seo,autor information,viewport,page description
+5. <title> - title for html page 
+6. <body> - container for all the visible contents such as heading,paragraph,images,tables,form etc
+7. <p> - use for paragraph
+
+
+======================= *** =======================
+
+Question 3: What is the difference between block-level elements and inline elements in
+HTML? Provide examples of each.
+
+-->
+
+- block-level elements :
+1. block-level elements always start on new line , and the browser automatically add some space before 
+and after the element (any space depends on the browser's default stylesheet.)
+2. block-level elements always takes up the full width available 
+3. can have width,height,margin,padding applied
+4. used for layout
+5. examples (header,footer,main,section,div,p etc)
+
+- inline-level elements :
+1. An inline elements doesn't start on new line
+2. An inline elements only takes up as much width as necessary
+3. Width and height are determined by the content only.
+4. Used for formatting text or small content within a block.
+5. examples (span,b,strong,em,img etc)
+
+
+======================= *** =======================
+
+
+Question 4: Discuss the role of semantic HTML. Why is it important for accessibility and SEO?
+Provide examples of semantic elements.
+
+-->
+
+- semantic elements means elements that clearly describe their meaning
+- These elements not only describe the structure of a webpage but also 
+convey meaning about the content they enclose.
+- using semantic tags improve quality of your code and some benefits like accessibility and SEO
+
+1. accessibility
+- Semantic elements help screen readers and other assistive technologies interpret the content more accurately.
+This ensures that people with disabilities (such as blindness or low vision) can navigate and understand the 
+content of a webpage.
+For example, <header>, <nav>, and <footer> help screen readers understand where navigation or important sections 
+of the page are located.
+
+2. SEO 
+- Search engines like Google use the structure of the HTML document to understand the content and relevance of 
+the page. Semantic tags help search engines interpret the meaning of the content, improving the page’s ranking.
+- For example, the use of <article> indicates that the content inside is an article, which can help search
+engines index it as relevant content.
+- Search engines give more weight to content placed in semantic tags, such as <header>, <footer>, 
+and <main>, over content in non-semantic tags like <div>.
+
+
+- examples of semantic elements are below :
+1. header
+2. footer
+3. main 
+4. section etc.
+
+
+

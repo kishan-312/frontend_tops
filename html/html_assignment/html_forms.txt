@@ -1,0 +1,63 @@
+======================= HTML FORMS =======================
+
+
+Question 1: What are HTML forms used for? Describe the purpose of the input, textarea,
+select, and button elements.
+
+-->
+
+- HTML forms used for collect user input (data).
+- A form can include various types of fields (e.g., text fields, buttons, checkboxes) that allow users 
+to enter and send data to the web server.
+
+- Purpose of the HTML elements :
+
+1. input 
+- used for to create various types of interactive controls within a form , allowing user to enter data
+- The <input> element allows users to input various types of data, such as text, numbers, dates, or selections 
+(e.g., for checkboxes and radio buttons).
+
+2. textarea
+- used for multi-line text-input , such as descriptions
+
+3. select 
+- used for to create drop-down lists with multiple options from which user can select option
+
+4. button
+- used for to create clickable button within form , such as submit button,reset button
+
+
+
+======================= *** =======================
+
+
+Question 2: Explain the difference between the GET and POST methods in form submission.
+When should each be used?
+
+-->
+
+- when a user fill form and submit form , browser sends user data to server using one of two HTTP methods
+: get or post
+
+- both used for transferring data, but they server different purpose
+
+1. get - use for retrieving information
+2. post - submit sensitive and complex data
+
+
+======================= *** =======================
+
+Question 3: What is the purpose of the label element in a form, and how does it improve
+accessibility?
+
+-->
+
+- label element in html used to provide textual descriptions for form controls such as input,textarea,
+select elements
+
+- How <label> Improves Accessibility :
+1. label element link textual description with form controls using for attribute 
+2. screen reader announce label text when user navigate to the form control , making form accessible for 
+visually impaired users.
+3. when a label element link with form controls , clicking the label element also focus associated input
+elements . this useful for small screen user

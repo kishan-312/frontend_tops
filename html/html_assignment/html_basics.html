@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>HTML webpage</title>
+    <!-- font family -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+      table a {
+        text-decoration: none;
+      }
+
+      aside div ul li,
+      aside div ol li {
+        margin-top: 15px;
+      }
+      aside {
+        position: fixed;
+        top: calc(100vh-30px); /* Height of the header */
+        left: 0;
+        width: 20%;
+        background-color: cornflowerblue;
+        height: calc(100vh - 30px); /* Full height minus the header */
+        padding: 10px;
+        overflow-y: auto; /* Enable scrolling for the aside content */
+      }
+      main {
+        display: flex;
+        margin-left: 20%; /* Create space for the aside */
+        width: 100%;
+      }
+      section {
+        width: 80%;
+        overflow-y: auto; /* Enable vertical scrolling for section */
+        overflow-x: hidden;
+      }
+
+      section div:first-of-type {
+        width: 100%;
+        background-color: rgb(70, 228, 78);
+        padding: 40px;
+      }
+
+      footer {
+        padding: 40px;
+        background-color: black;
+      }
+
+      footer div {
+        background-color: none !important ;
+      }
+
+      /* style="width: 20%;background-color: cornflowerblue;height: calc(100vh-30px);  padding: 10px;" */
+    </style>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+      overflow-x: hidden;
+    "
+  >
+    <!-- 
+    
+    
+Task:
+Create a simple HTML webpage that includes:
+ A header (<header>), footer (<footer>), main section (<main>), and aside section
+(<aside>).
+ A paragraph with some basic text.
+ A list (both ordered and unordered).
+ A link that opens in a new tab.
+    
+    
+
+    -->
+
+    <!-- header -->
+
+    <header
+      style="
+        background-color: aquamarine;
+        width: 100%;
+        height: 30px;
+        padding: 5px;
+      "
+    >
+      <nav style="width: 100%; height: 100%">
+        <table style="width: 80%; height: 100%; margin: auto">
+          <tr>
+            <td>
+              <a href="#" style="color: red">
+                KISMI<span style="color: black">CODE</span>
+              </a>
+            </td>
+            <td>
+              <a href="https://www.w3schools.com/html" target="_blank ">
+                HTML
+              </a>
+            </td>
+            <td>
+              <a href="https://www.w3schools.com/css" target="_blank "> CSS </a>
+            </td>
+            <td>
+              <a href="https://www.w3schools.com/js" target="_blank "> JS </a>
+            </td>
+            <td>
+              <input type="text" />
+              <button>Search</button>
+            </td>
+            <td>
+              <span
+                style="background-color: blue; color: white; padding: 4px 6px"
+                >Login</span
+              >
+            </td>
+          </tr>
+        </table>
+      </nav>
+    </header>
+
+    <!-- main (section and aside) -->
+    <main>
+      <aside>
+        <div style="width: 100%">
+          <p style="text-align: left; font-size: 1.2em; font-weight: bold">
+            HTML TUTORIAL
+          </p>
+          <ul style="width: 100%">
+            <li>HTML HOME</li>
+            <li>HTML BASIC</li>
+            <li>HTML ELEMENTS</li>
+            <li>HTML ATTRIBUTES</li>
+            <li>HTML HEADINGS</li>
+          </ul>
+        </div>
+        <div style="width: 100%">
+          <p style="text-align: left; font-size: 1.2em; font-weight: bold">
+            HTML MEDIA
+          </p>
+          <ol style="width: 100%">
+            <li>HTML MEDIA</li>
+            <li>HTML BASIC</li>
+            <li>HTML ELEMENTS</li>
+            <li>HTML ATTRIBUTES</li>
+            <li>HTML HEADINGS</li>
+          </ol>
+        </div>
+        <div style="width: 100%">
+          <p style="text-align: left; font-size: 1.2em; font-weight: bold">
+            HTML APIS
+          </p>
+          <ul style="width: 100%">
+            <li>HTML GEOLOCATION</li>
+            <li>HTML DRAG/DROP</li>
+            <li>HTML WEBSTORAGE</li>
+            <li>HTML WEBWORKERS</li>
+            <li>HTML SSE</li>
+          </ul>
+        </div>
+        <div style="width: 100%">
+          <p style="text-align: left; font-size: 1.2em; font-weight: bold">
+            HTML EXAMPLES
+          </p>
+          <ul style="width: 100%">
+            <li>HTML EXAMPLES</li>
+            <li>HTML EDITOR</li>
+            <li>HTML QUIZ</li>
+            <li>HTML WEBWORKERS</li>
+            <li>HTML SSE</li>
+          </ul>
+        </div>
+      </aside>
+      <section>
+        <div>
+          <hgroup>
+            <h1>SOME BASIC TEXT</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+              hic, consequuntur tenetur nulla culpa voluptates eaque reiciendis
+              adipisci! inventore.
+            </p>
+          </hgroup>
+          <hgroup>
+            <h1>SOME ADVANCE TEXT</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos sapiente fugit neque molestias? Similique dolores
+              mollitia non architecto.
+            </p>
+          </hgroup>
+          <hgroup>
+            <h1>SOME ADVANCE TEXT</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos sapiente fugit neque molestias? Similique dolores
+              mollitia non architecto.
+            </p>
+          </hgroup>
+         
+        </div>
+        <footer>
+          <h1 style="color: white">KISMICODE</h1>
+          <ul
+            style="
+              color: bisque;
+              display: flex;
+              list-style: none;
+              gap: 20px;
+              padding-left: 0;
+            "
+          >
+            <li>PLUS</li>
+            <li>SPACES</li>
+            <li>GET CERTIFIED</li>
+            <li>FOR TEACHERS</li>
+            <li>FOR BUSINESS</li>
+            <li>CONTACT US</li>
+          </ul>
+          <p style="color: aliceblue">
+            Copyright 1999-2024 by Refsnes Data. All Rights Reserved. Kismicode
+            is Powered by kishan mistry.
+          </p>
+          <p style="color: aliceblue" >
+            Kismicode is optimized for learning and training. Examples might be simplified to improve reading and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using Kismicode, you agree to have read and accepted our terms of use, cookie and privacy policy.
+          </p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
