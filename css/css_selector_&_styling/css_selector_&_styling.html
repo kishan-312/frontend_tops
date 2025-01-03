@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+    <!-- title -->
+    <title>css_selector_&_styling</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon"  >
+
+    <!-- Google Font : Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css_selector_&_styling.css"  >
+
+    <!-- base -->
+    <!-- <base href="https://www.w3schools.com/html" target="_blank"  > -->
+
+</head>
+<body>
+
+    <!-- 
+
+        Task:
+            Style the contact form (created in the HTML Forms lab) using external CSS. The following should be
+            implemented:
+             Change the background color of the form.
+             Add padding and margins to form fields.
+             Style the submit button with a hover effect.
+             Use class selectors for styling common elements and ID selectors for unique elements
+    
+    
+    -->
+
+
+
+    <div class="form-container" >
+
+        <!-- action="/action_page.php" -->
+
+        <form action=""  method="get" accept-charset="UTF-8" autocomplete="on" name="form1" >
+
+            <h2> get in touch </h2>
+
+           <div class="main-container" >
+
+             <!-- name -->
+             <div class="name-container container" >
+                <label for="name"> Name* </label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" class="form-field" required >
+            </div>
+
+            <!-- email -->
+            <div class="email-container container" >
+                <label for="email"> Email* </label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" class="form-field" required >
+            </div>
+
+
+            <!-- message -->
+            <div class="message-container container" >
+                <label for="message" > Message* </label>
+                <textarea name="message" id="message" rows="5"  cols="30" class="form-field" placeholder="Write Your Message" required ></textarea>
+            </div>
+
+            <!-- button -->
+            <button type="submit" id="submitBtn" class="form-button" > Submit </button>
+
+           </div>
+
+        </form>
+
+    </div>
+
+    
+</body>
+</html>

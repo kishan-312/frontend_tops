@@ -1,0 +1,168 @@
+
+
+/* 
+
+    Task:
+    Style the contact form (created in the HTML Forms lab) using external CSS. The following should be
+    implemented:
+     Change the background color of the form.
+     Add padding and margins to form fields.
+     Style the submit button with a hover effect.
+     Use class selectors for styling common elements and ID selectors for unique elements
+    
+*/
+
+
+
+
+/* overriding the default browser style */
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: "Roboto", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+
+
+/* form-container */
+
+
+.form-container {
+
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 3px 3px rgba(0,0,0,0.1) ;
+    max-width: 500px;
+    width: 100%;
+
+
+}
+
+/* h2 */
+
+.form-container form h2 {
+
+    text-align: center;
+    color: #333333;
+    font-size: 30px;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.form-container form h2::after {
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+
+
+}
+
+/* main container */
+
+.form-container .main-container {
+
+    margin: 30px 0 0;
+
+}
+
+.form-container .main-container .container {
+
+
+    margin: 20px 0;
+
+}
+
+
+.form-container .main-container .container label {
+
+    display: block;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 5px;
+
+}
+
+/* form-field */
+
+
+.form-container .main-container .container .form-field {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    font-size: 17px;
+    border-radius: 5px;
+
+}
+
+.form-container .main-container .container .form-field:focus {
+
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 6px rgba(102,175,233,0.6);
+
+
+}
+
+.form-container .main-container .container #message {
+
+    resize: none;
+
+}
+
+/* button */
+
+
+.form-container .main-container #submitBtn {
+
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+
+}
+
+.form-container .main-container #submitBtn:hover {
+
+    background-color:  #45a049;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

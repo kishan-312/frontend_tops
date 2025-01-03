@@ -1,0 +1,234 @@
+### =========== Theory Assignment ===========
+
+Question 1: What is a CSS selector? Provide examples of element, class, and ID selectors
+-->
+ 
+ - CSS selectors used to select and style specific HTML element within webpage
+ - Selectors enables you to apply style to elements based on their type,id,class,attributes etc.
+
+ 1. Element Selector: target all instances of specific HTML element.
+ - Example. 
+             h1 {
+
+                background-color : red;
+
+            }
+
+ 2. class selector : target elements with a specific class attribute. class can be applied to multiple elements
+ - Example.   
+                .container {
+
+                    width : 550px;
+
+                }
+
+ 3. id selector : target single element with a specific ID attribute. IDs should be unique within a page
+ - Example.   
+                #data {
+
+                    color : green;
+
+                }
+
+
+
+Question 2: Explain the concept of CSS specificity. How do conflicts between multiple stylesget
+resolved ?
+
+--> 
+
+    - CSS specificity means which CSS rules applied to HTML element when multiple rules could apply.
+    - it assigns a weight to CSS selector, and the selector with highest weight takes precedence.
+
+    ** Specificity Hierarchy:
+    - specificity is calculated based on types of css and selector
+
+    -> CSS types specificity
+
+            Type                    Specificity
+        -- !important              Overrides all
+        -- Inline CSS                   1000
+        -- Internal CSS            based on selector specificity
+        -- External CSS            based on selector specificity
+        -- Browser default              N/A
+
+    -> Selector types specificity
+
+            Type                      Specificity
+        -- Id selector                  0100
+        -- Class selector               0010
+        -- Attribute selector           0010
+        -- Pseudo-class selector        0010
+        -- Element Selector             0001
+        -- Pseudo-element selector      0001
+        -- universal selector           0000
+
+    ** Resolving conflicts
+    - when multiple rules applied to same element, conflicts are resolved as follows:
+
+    1. important : declaration marked with !important override all declarations 
+
+    .list {
+
+        color: red !important;
+
+    }
+
+
+    2. specificity : Among competing rules, the one with higher specificity takes precedence.
+
+    === Lower specificity ===
+
+    .text {
+
+        color: black;
+
+    }
+
+    === Higher specificity ===
+    
+    #main .text {
+
+        color: red;
+
+    }
+
+    3. source order : if selectors have equal specificity , the rules that appears last in the CSS applied
+
+    .note {
+
+        color: green;
+
+    }
+
+    .note {
+
+        color: orange;
+
+    }
+
+
+
+Question 3: What is the difference between internal, external, and inline CSS? Discuss the advantages and 
+disadvantages of each approach .
+
+-->
+
+    - CSS can be applied to HTML using 3 ways : inline,internal,external
+
+    1. internal CSS :
+
+    - css styles add into style tag within head section of HTML document
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+
+    </head>
+    <body>
+
+        <p>This is styled with internal CSS.</p>
+
+    </body>
+    </html>
+
+
+    2. inline CSS :
+
+    - css styles add into style attribute in HTML element under body section of HTML document
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+
+        <p style="color: green;">This is styled with inline CSS.</p>
+
+    </body>
+    </html>
+
+    3. external CSS :
+
+    - css styles stored in separate .css file  and this file linked to HTML document using link tags
+    href attribute in head section
+
+    style.css
+    ---------
+
+    p {
+
+     color: red;
+
+    }
+
+    index.html
+    ----------
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+        <p>This is styled with external CSS.</p>
+
+    </body>
+    </html>
+
+
+    ===== difference/comparison between inline,internal,external CSS =====
+
+    Feature              Internal CSS           Inline CSS               External CSS
+    -------              ------------           ----------               ------------
+
+    Reusability          Limited to one page    Not reuseable            Reuseable across pages
+
+    Maintainability      Moderate               Poor                     High
+
+    Performance          Moderate               Low                      High
+
+    File size            Larger HTML files      Larger HTML files        Smaller HTML files
+
+    Use Case             small single-page      Quick fixes              Multi-page sites
+                         sites
+
+
+    ===== advantages and disadvantages of inline,internal and external CSS =====
+
+    1. Internal :
+
+    advantages ->
+
+    - Easy to implement : internal css is simple to add to an HTML document
+    - Faster loading : since the CSS is embedded in the HTML, there's no need for an additional HTTP request
+
+    disadvantages ->
+
+    - Limited Reusability : internal CSS can be applied to specific HTML document 
+    - Page Bloat : internal CSS can increase the sizes of the HTML document
+
+    2. Inline :
+
+    advantages ->
+
+    - Quick styling : inline CSS useful for applying styles to a single element
+    - No extra request : inline css eliminates the need for an additional HTTP request
+
+    disadvantages ->
+
+    - Limited scope : inline CSS only applies to the specific element
+    - Code duplication : inline CSS can lead to duplicated code, making maintenance harder.
+
+
+
+
+
+
+
+

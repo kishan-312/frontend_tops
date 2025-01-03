@@ -1,0 +1,149 @@
+### =========== Theory Assignment ===========
+
+Question 1: Explain the CSS box model and its components (content, padding, border,
+margin). How does each affect the size of an element?
+
+--> 
+
+    - CSS box model is fundamental concept in webdesign, that describes how every HTML element is represented
+    by a rectangular box. it determines the size and spacing of HTML element on webpage
+
+    - The box model consists of following components :
+
+    1. content
+    2. padding
+    3. border
+    4. margin
+
+    ========== Content ==========
+
+    - The actual content of HTML element (e.g., text,images)
+    - The area where your text or other elements are displayed
+    - Controlled by properties like width and height.
+
+    ** Effect on size :
+    - The content defines the default size of the element. if the content overflows the width or height. it may
+    expand the box unless managed with properties like overflow.
+
+    ========== Padding ==========
+
+    - The space between the content and element's border.
+    - Adds extra space inside the element, pushing the content away from the border
+
+    ** Effect on size :
+    - padding increase the size of the element by adding space inside the border.( depend on box-sizing property )
+    - total width ( if no border ) = left padding + content + right padding 
+
+    ========== border ==========
+
+    - The edge surrounding the content and padding 
+
+    ** Effect on size :
+    - Borders add to the overall the size of the element
+    - total width = left border + left padding + content + right padding + right border
+
+    ========== margin ==========
+
+    - The space outside the border , seprating the element from other elements
+    - doesn't effect the element's size but creates space between elements
+        
+    ** Effect on size :
+    - margins create the space outside the box without increasing actual size of the element
+
+    
+    ########### Box-model diagram ########### 
+
+            +----------------------------+ <-- Margin
+        |       (Margin Area)        |
+        |  +----------------------+  | <-- Border
+        |  |     (Border Area)    |  |
+        |  |  +----------------+  |  | <-- Padding
+        |  |  |  (Content Area) |  |  |
+        |  |  +----------------+  |  |
+        |  +----------------------+  |
+        +----------------------------+
+
+
+
+Question 2: What is the difference between border-box and content-box box-sizing in CSS?
+Which is the default?
+
+--> 
+
+    - The box-sizing property in CSS determines how the total width and height of the element are calculated
+
+    1. Content-box
+    - The specified width and height include only the content area, excluding border and padding
+    - padding and border added outside the specified dimensions , increasing the element's total size
+
+    Formula:
+    Total Width = width + padding + border.
+    Total Height = height + padding + border.
+
+    Example:
+
+        div {
+
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            border: 5px solid black;
+            box-sizing: content-box;
+
+        }
+
+    ---------
+
+    Content area: 100px × 100px
+
+    Total size:
+    Width = 100px (content) + 10px (left padding) + 10px (right padding) + 5px (left border) + 5px (right border) = 130px.
+    Height = 100px (content) + 10px (top padding) + 10px (bottom padding) + 5px (top border) + 5px (bottom border) = 130px.
+
+    2. border-box
+
+    - The specified width and height include content area,padding and border
+    - total size of the element stays the same as the specified dimensions
+
+    Formula:
+    Total Width = width.
+    Total Height = height.
+
+    Example:
+
+    div {
+
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        border: 5px solid black;
+        box-sizing: border-box;
+
+    }
+
+    ---------
+
+    Total size: 100px × 100px (fixed).
+
+    Content area:
+    Width = 100px - (10px left padding + 10px right padding + 5px left border + 5px right border) = 70px.
+    Height = 100px - (10px top padding + 10px bottom padding + 5px top border + 5px bottom border) = 70px.
+
+
+    ====== key difference ======
+
+    property            content-box                             border-box
+    --------            -----------                             -----------
+
+    width/height        includes only the content               Includes content, padding, border.
+
+    Total size          Larger than the specified size if       Fixed to the specified size.
+                        padding or border is added.
+
+    
+    **Default Value :
+
+    - The default value for box-sizing is content-box.
+
+
+
