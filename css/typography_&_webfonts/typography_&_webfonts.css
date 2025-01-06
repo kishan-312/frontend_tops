@@ -1,0 +1,89 @@
+/* 
+    
+    Task
+    Create a blog post layout with the following:
+     A title, subtitle, and body content.
+     Use at least two different fonts (one for headings, one for body content).
+     Style the text to be responsive and easy to read.
+    Additional Requirements:
+     Use a custom font from Google Fonts.
+     Adjust line-height, font-size, and spacing for improved readability. 
+
+
+ */
+
+ * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+
+ body {
+
+    
+    font-family: "Roboto", serif;
+    height: 100vh;
+    background-color: #f2f2f2;
+    padding: 30px;
+    color: #333;
+    line-height: 1.5em;
+
+ }
+
+ h2 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    color: #222;
+    margin-bottom: 0.5em;
+
+ }
+
+ .subtitle {
+
+    font-weight: 500;
+
+ }
+
+ p {
+
+    font-family: "Roboto", serif;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-align: justify;
+
+ }
+
+ 
+
+ .body-content::before {
+
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    display: block;
+    margin-bottom: 20px;
+
+
+ }
+
+
+ @media (max-width:576px) {
+
+    h2 {
+
+        font-size: 1.5em;
+
+    }
+
+    p {
+
+        font-size: 1em;
+
+
+    }
+    
+ }

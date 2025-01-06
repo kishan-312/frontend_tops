@@ -1,0 +1,129 @@
+### =========== Theory Assignment ===========
+
+Question 1: Explain the difference between web-safe fonts and custom web fonts. Why might
+you use a web-safe font over a custom font?
+
+-->
+
+    Web-Safe Fonts
+    --------------
+
+    Defination : 
+    Web-safe fonts that are set of fonts that are commonly pre-installed on most operating system and devices
+
+    Examples :
+    Arial, Times New Roman, Helvetica, Verdana, Georgia etc
+
+    Characteristics : 
+    - No need for extra files to load; they are already installed on the user's device
+    - Ensure compatibility across most devices and browsers.
+
+    Advantages :
+    - Faster loading times
+    - Reliable and consistent apperance across platforms
+
+    Disadvantages :
+    - Limited design options, which can make designs looks generic.
+
+
+
+    Custom web Fonts
+    ----------------
+
+    Defination :
+    Custom web fonts are fonts that are not pre-installed on devices but are loaded from web server or a service 
+    like Google fonts.
+
+    Examples :
+    Open sans, Roboto, Poppins
+
+    Characteristics :
+    - Provide greater flexibility and creativity in design 
+    - Loaded via @font-face or services like Google fonts or Adobe fonts
+
+    Advantages :
+    - Enhance branding and visual uniqueness.
+    - Access to thousands of font styles and weights
+
+    Disadvantages :
+    - Slower loading times due to extra HTTP requests
+    - Potential issues if the font fails to load ( required fall-back fonts )
+
+
+    Why Choose Web-Safe Fonts Over Custom Fonts?
+    --------------------------------------------
+
+    - web-safe fonts do not require additional resources,leading to faster page load times,
+    especially on slow internet connections.
+
+    - web-safe fonts are ensure consistency across all devices and browser without worrying about
+    font loading issues 
+
+    - Even when using custom fonts, web-safe fonts are often set as fallbacks in case the custom font 
+    fails to load.
+
+
+    Example of Fallback Using Web-Safe Fonts
+    ----------------------------------------
+   
+    body {
+
+        font-family: 'Roboto', Arial, sans-serif;
+
+    }
+
+
+Question 2: What is the font-family property in CSS? How do you apply a custom GoogleFont
+to a webpage?
+
+--> 
+
+    - The font-family property in CSS specifies the typeface (font) that should be applied to an element's text.
+     You can define multiple fonts as a "fallback" list in case the browser cannot render the first font.
+
+    Syntax of font-family :
+    -----------------------
+
+    - font-family: "Font1", "Font2", generic-family;
+
+    Font1: The primary font you want to use.
+    Font2: The fallback font if Font1 is unavailable.
+    Generic-family: A general font type (serif, sans-serif, monospace, etc.) used as the ultimate fallback.
+
+    How to Apply a Custom Google Font :
+    -----------------------------------
+
+    Google Fonts is a popular service for adding custom fonts to your website. Here's how you can use it:
+
+    Steps to Apply a Google Font
+    1. Visit Google Fonts:
+    - Go to Google Fonts.
+
+    2. Choose a Font:
+    - Browse and select the font you want to use. For example, "Roboto."
+
+    3. Get the Embed Code:
+    - After selecting a font, you'll see a "Select this style" option. Copy the <link> tag under "Embed Font."
+    
+    Example:
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    4. Add the Embed Code to Your HTML:
+    - Paste the <link> tag inside the <head> of your HTML file.
+    
+    <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    5. Use the Font in CSS:
+    - Apply the font using the font-family property in your CSS.
+
+    body {
+
+    font-family: 'Roboto', sans-serif;
+
+    }
+
+    
+
+
