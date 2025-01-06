@@ -1,0 +1,111 @@
+### =========== Theory Assignment ===========
+
+
+Question 1: What is CSS Flexbox, and how is it useful for layout design? Explain the terms
+flex-container and flex-item.
+
+--> 
+
+  - CSS flexbox is layout model in css that provides the efficient way to arrange and align elements 
+  within a container
+
+  - It is designed to help you build flexible and responsive layouts without using float or positoning hacks
+
+  - using flexbox u have control over how child elements ( flex-items ) are distributed and align , both along
+  the main axis and the cross axis
+
+  Why is flexbox useful ?
+  -----------------------
+
+  - Flexibility : Automatically adjust the size and spacing of items to fit the available space
+  - Responsive Design : Building layouts that work on different screen sizes
+  - Alignment Control : Easily aligns items horizontally and vertically without additional CSS
+  - Order Management : Allow changing the order of items wthout modifying the HTML structure
+
+  Key terms
+  ---------
+
+  1. Flex-container
+
+  - The parent element in a flexbox layout. it is the container that holds the flex items .
+  - to make an element a flex-container, you use the display: flex ; property
+
+  Properties of Flex-Container:
+  -----------------------------
+
+  - flex-direction : defines the direction of items.
+  - flex-wrap : items should wrap in multiple lines.
+  - align-items : align items to along the cross axis
+  - align-content : align content to along the cross axis.
+  - justify-content : align content to along the main axis.
+
+  2. Flex-item
+
+  - The child elements of the flex-container. These are the items you arrange using flexbox Properties
+
+  Properties of Flex-Item:
+
+  - flex-grow: specifies the how much an item should grow relative to others.
+  - flex-shrink: Specifies how much an item should shrink if space is tight.
+  - flex-basis: Sets the initial size of the item before extra space is distributed.
+  - order : order of items in layout.
+  - align-self : specific item align along the cross axis.
+
+
+    Advantages of Flexbox
+    ---------------------
+
+    - Simplifies layout alignment.
+    - Works well for one-dimensional layouts (rows or columns).
+    - Reduces the need for extra CSS hacks like floats and clearfixes.
+
+
+
+
+Question 2: Describe the properties justify-content, align-items, and flex-
+direction used in Flexbox.
+
+--> 
+
+   - These properties are used in CSS flexbox to control alignment, spacing and direction of
+   flex-items within a flex-container
+
+   1. Justify-content 
+   - align flex-items along the main-axis . it also determines how much space is distributed between or
+   around the flex-items
+
+   Values for Justify-content :
+   ---------------------------
+
+   - flex-start : items are aligned at the start of the main-axis.
+   - flex-end : items are aligned at the end of the main-axis.
+   - center : items are centered along the main axis.
+   - space-between : space between items are equal , with no space at the start or end .
+   - space-around : space around the items are equal and also between space but between space is 2x then around
+   - space-evenly : space between,around the items are equal 
+
+   2. align-items 
+   - the align flex items along the cross axis. 
+
+   Values for align-items :
+   -----------------------
+
+   - stretch : item stretch to fill the container along the cross-axis.
+   - flex-start : items are aligned at the start of cross axis.
+   - flex-end : items are aligned at the end of cross axis.
+   - center : items are aligned along the cross axis.
+   - baseline : items are aligned so their baselines(text baseline) match.
+
+   3. flex-direction 
+   - the flex-direction property defines the direction of the main axis 
+
+   Values for flex-direction:
+   --------------------------
+
+   - row (default): Items are arranged horizontally, from left to right.
+   - row-reverse: Items are arranged horizontally, from right to left.
+   - column: Items are arranged vertically, from top to bottom.
+   - column-reverse: Items are arranged vertically, from bottom to top.
+
+
+   
