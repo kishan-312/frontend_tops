@@ -1,0 +1,53 @@
+### =========== Theory Assignment ===========
+
+
+Question 1: What are media queries in CSS, and why are they important for responsive
+design?
+
+--> 
+   
+    - Media queries are a feature in CSS that allow you to apply styles based on characteristics of the 
+    device or screen being used , such as width, height, resolutions, orientation.
+
+    - they enables your website to adapt its layout and design to different devices, making it responsive
+
+
+    Why Are Media Queries Important for Responsive Design?
+    ------------------------------------------------------
+
+    - Responsive design ensures that a website looks and functions well on all devices , including desktops,
+    tablets and mobile phones 
+
+    - media queries are a key tool in achiving this because they allow you to :
+
+    1. Adapt layout : Adjust grids, flex containers, or other layout for different screen sizes.
+    2. change font sizes and spacing : Make text more readable on small screens
+    3. Optimize Performance: Load images or assets suitable for specific screen resolutions.
+    4. Enhance User Experience: Provide a seamless experience across devices.
+
+
+
+Question 2: Write a basic media query that adjusts the font size of a webpage for screens
+smaller than 600px
+
+--> 
+
+    - Here’s a basic media query to adjust the font size of a webpage for screens smaller than 600px:
+
+    @media (max-width: 600px) {
+
+        html {
+
+            font-size: 12px; /* Adjust the font size as needed */
+            
+        }
+
+    }
+
+
+    Explanation:
+    ------------
+
+    - @media (max-width: 600px): Targets devices with a screen width of 600px or less.
+    - html { font-size: 12px; }: Reduces the base font size for smaller screens to ensure readability and 
+    better layout adjustment.
