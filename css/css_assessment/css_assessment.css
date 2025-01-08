@@ -1,0 +1,365 @@
+/* reset universal selector */
+
+*,
+*::after,
+*::before {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* html */
+
+html {
+
+    font-family: "Poppins", serif;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+/* body */
+
+body {
+
+    background-color: #f9f9f9;
+    color: #333;
+    min-height: 100vh;
+    line-height: 1.6;
+
+}
+
+/* a */
+
+a {
+
+    text-decoration: none;
+
+}
+
+/* button */
+
+
+button {
+
+    border: none;
+    cursor: pointer;
+
+}
+
+
+/* ==================== header ==================== */
+
+.header {
+
+    background-color: blue;
+
+}
+
+.header .box-layout {
+
+    padding: 0 10px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.header .box-layout .navbar {
+
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* ===== logo ===== */
+
+.header .box-layout .navbar .logo {
+
+    display: block;
+
+}
+
+.header .box-layout .navbar .logo h1 {
+
+    text-transform: uppercase;
+
+}
+
+.header .box-layout .navbar .logo h1 a {
+
+    color: white;
+
+}
+
+
+/* ===== nav ====== */
+
+.header .box-layout .navbar nav .nav {
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+
+}
+
+
+.header .box-layout .navbar nav .nav label {
+
+    padding: 7px;
+    transition: background-color 0.4s ease;
+    font-weight: 600;
+
+}
+
+.header .box-layout .navbar nav .nav label:hover {
+
+    background-color: #00aeff;
+
+}
+
+.header .box-layout .navbar nav .nav label a {
+
+    color: white;
+
+}
+
+/* ========== dropdown-1 =========== */
+
+.header .box-layout .navbar nav .nav .dropdown {
+
+    position: relative;
+    transition: display 0.4s ease;
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu {
+
+    position: absolute;
+    top: 34px;
+    left: -7px;
+    width: 110px;
+    background-color: blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    display: none;
+    border-radius: 5px;
+
+}
+
+
+.header .box-layout .navbar nav .nav .dropdown:hover .dropdown-menu {
+
+
+    display: block;
+
+}
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu label {
+
+    display: inline-block;
+    width: 100%;
+    transition: background-color 0.4s ease, color 0.4s ease;
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu label:not(:last-of-type) {
+
+    border-bottom: 1px solid white;
+
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu label:hover {
+
+    background-color: #00aeff;
+
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu label:hover a {
+
+    color: white;
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu label a {
+
+
+    color: white;
+    font-size: 14px;
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu .dropdown2 .fa-angle-right {
+
+    margin-left: 10px;
+
+}
+
+/* ========== dropdown-2 =========== */
+
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu .dropdown2 {
+
+    position: relative;
+    transition: display 0.4s ease;
+
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu .dropdown2  .dropdown-menu2 {
+
+    position: absolute;
+    display: none;
+    left: 110px;
+    top: 2px;
+    width: 110px;
+    background-color: blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    transition: display 0.4s ease;
+
+
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu .dropdown2:hover .dropdown-menu2 {
+
+    display: block;
+
+}
+
+.header .box-layout .navbar nav .nav .btn {
+
+    background-color: white;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    transition: scale 0.4s ease;
+
+}
+
+.header .box-layout .navbar nav .nav .btn:active {
+
+    scale: 1.1;
+
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/*  ==================== Media queries =====================  */
+
+/* for mobile screen : max-width:576px */
+
+@media (max-width:576px) {
+
+
+    .header .box-layout .navbar {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .header .box-layout .navbar nav .nav {
+
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+
+    .header .box-layout .navbar .logo  {
+
+        display: none;
+        width: 100%;
+
+    }
+    
+
+}
+
+/* for mobile screen = landscape mode : min-width:576px */
+
+@media (min-width:576px) {
+
+
+
+    .header .box-layout .navbar {
+
+        justify-content: space-evenly;
+    
+    }
+
+    .header .box-layout .navbar .logo  {
+
+        display: none;
+
+    }
+    
+    
+
+}
+
+
+/* for tablet screen : min-width:768px */
+
+@media (min-width:768px) {
+
+    .header .box-layout .navbar .logo  {
+
+        display: block;
+
+    }
+    
+    .header .box-layout .navbar .logo h1 {
+
+        font-size: 28px;
+
+    }
+
+    .header .box-layout .navbar {
+
+       
+        justify-content: space-between;
+    
+    }
+    
+    
+}
+
+/* for tablet screen : min-width:992px */
+
+@media (min-width:992px) {
+
+    .header .box-layout .navbar .logo h1 {
+
+        font-size: 32px;
+
+    }
+    
+
+}
+
+
+/* for tablet screen : min-width:1200px */
+
+@media (min-width:1200px) {
+
+
+
+}
+
+/* for tablet screen : min-width:1400px */
+
+@media (min-width:1400px) {
+
+
+
+}
+

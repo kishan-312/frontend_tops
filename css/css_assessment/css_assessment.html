@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page description  -->
+    <meta name="description" content="Navigation bar with dropdown menu" >
+
+    <!-- keyword -->
+    <meta name="keywords" content="HTML CSS webdesign" >
+
+    <!-- author information -->
+    <meta name="author" content="Kishan Mistry" >
+
+    <!-- title -->
+    <title>CSS assessment</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon" >
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- font-awesome icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css_assessment.css">
+
+</head>
+<body>
+
+<!-- 
+        Task :
+        Core Web Designing
+        Assessment Test 2
+         Create a Navigation bar with dropdown menu and Logo.
+
+         Make sure to use lowercase for all start and end tags and tag must be closed
+        as it starts.
+
+         Execution of the code following result must be displayed.
+  
+         Make sure each business logic is denoted with appropriate comments and
+        make your code interactive and represent clean and clear output on your
+        console screen.
+         Make sure this code must be implemented using DIV tag , Label tag etc .
+         DO NOT USE UL ,OL and LI TAG to create this Navbar.
+
+         Make sure use of Pseudo class is there to achieve hoverable dropdown menu.
+ 
+         Make sure to use EXTERNAL CSS only and proper path must be there do not
+        use system path to call this css.
+   
+         Make sure to use class and make this code clean and do not write
+        unnecessary code.
+    
+         Class name must be like the way it should be.(i.e. DO NOT USE a,b,c ,x1,x2 like
+        names)
+      
+
+-->
+
+    <!-- navbar  -->
+
+    <header class="header">
+        <div class="box-layout">
+            <div class="navbar">
+
+                <!-- logo -->
+                <div class="logo">
+                    <h1> <a href="#"> kismi<label>code</label> </a> </h1>
+                </div>
+
+                <!-- nav -->
+                <nav>
+                    <div class="nav">
+                        <label > <a href="#">Home</a> </label>
+                        <label > <a href="#">About</a> </label>
+                        <label class="dropdown" > <a href="#">Services <i class="fa-solid fa-angle-down" ></i> </a> 
+                        
+                            <div class="dropdown-menu">
+                                <label > <a href="#"> Web Design </a> </label>
+                                <label > <a href="#"> Marketing </a> </label>
+                                <label > <a href="#"> Wordpress </a> </label>
+                                <label class="dropdown2" > <a href="#"> More  <i class="fa-solid fa-angle-right" ></i> </a>
+                                    <div class="dropdown-menu2">
+                                        <label> <a href="#">HTML</a> </label>
+                                        <label> <a href="#">CSS</a> </label>
+                                        <label> <a href="#">JavaScript</a> </label>
+                                        <label> <a href="#">jQuery</a> </label>
+                                    </div>
+                                    
+                                </label>
+                            </div>
+                        
+                        </label>
+                        <label > <a href="#">Blogs</a> </label>
+                        <label > <a href="#">Contact</a> </label>
+                        <button class="btn" type="button" >Login</button>
+                    </div>
+                </nav>
+                
+            </div>
+        </div>
+    </header>
+
+    
+</body>
+</html>
