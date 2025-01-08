@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- page description -->
+    <meta name="description" content="responsive webpage">
+
+    <!-- keywords -->
+    <meta name="keywords" content="HTML CSS Webdesign" >
+
+    <!-- author -->
+    <meta name="author" content="Kishan Mistry" >
+
+
+    <!-- title -->
+    <title> responsive webpage </title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon"  >
+
+    <!-- Google Font : Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./responsive_design.css" >
+
+
+</head>
+<body>
+
+  
+ <!-- 
+    
+    Build a responsive webpage that includes:
+     A navigation bar.
+     A content section with two columns.
+     A footer.
+    Additional Requirements:
+     Use media queries to make the webpage responsive for mobile devices.
+     On smaller screens (below 768px), stack the columns vertically.
+     Adjust the font sizes and padding to improve readability on mobile.
+
+ 
+ 
+ -->
+
+    <!-- ========== header - navigation bar - start ========== -->
+    <header class="header">
+        <div class="box-layout">
+            <div class="navbar">
+
+                <!-- logo -->
+                <div class="logo">
+                    <h1> <a href="#">kismi<span>code</span> </a> </h1>
+                </div>
+
+                <!-- nav -->
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li class="dropdown" ><a href="#">Pages <i class="fa-solid fa-angle-down" ></i> </a>
+                            <ul class="dropdown-menu" >
+                                <li><a href="#">Email</a></li>
+                                <li><a href="#">Blog Pages</a></li>
+                                <li><a href="#">Error</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+          
+
+                <!-- search -->
+                <div class="search">
+                    <button class="btn1" > <i class="fa-solid fa-magnifying-glass" ></i> </button>
+                    <button class="btn2" > <i class="fa-regular fa-moon" ></i> </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== header - navigation bar - end ========== -->
+    
+    
+    <!-- ========== content section - start ========== -->
+
+    <main class="content_section" >
+        <section class="column left" >
+            <h2> ABOUT KISMICODE </h2>
+            <p>  Welcome to our website! We are dedicated to providing the best services and products to our customers. 
+                Our team is committed to excellence, ensuring that every experience with us is top-notch.
+            </p>
+            <p>
+                Established in 2020, we have consistently grown and adapted to meet the needs of our audience. 
+                From innovative solutions to exceptional customer service, we aim to exceed expectations.
+            </p>
+            <div class="fakeImg">
+                Image
+            </div>
+        </section>
+        <section class="column right" >
+            <h2> Our Services </h2>
+            <ul class="services" >
+                <li><strong>Web Development:</strong> Creating responsive and user-friendly websites tailored to your needs</li>
+                <li><strong>Graphic Design:</strong> Creating visually appealing designs to make your brand stand out</li>
+                <li><strong>Digital Marketing:</strong> Boosting your online presence to SEO, social media, and more.</li>
+                <li><strong>Consulting:</strong> Offering expert advice to help you achieve your business goals</li>
+                
+            </ul>
+            <p>
+                Whether you're looking to build a new project or improve an existing one, our services are designed to deliver value and results.
+            </p>
+        </section>
+    </main>
+
+
+    <!-- ========== content section - end ========== -->
+
+    <!-- ========== footer - start ========== -->
+
+    <footer class="footer" >
+        <p>&copy; 2025 KISMICODE | All rights reserved</p>
+    </footer>
+
+
+    <!-- ========== footer - end ========== -->
+
+    
+   
+
+
+
+
+
+</body>
+</html>

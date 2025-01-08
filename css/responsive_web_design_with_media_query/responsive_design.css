@@ -1,0 +1,527 @@
+/*     
+    Build a responsive webpage that includes:
+     A navigation bar.
+     A content section with two columns.
+     A footer.
+    Additional Requirements:
+     Use media queries to make the webpage responsive for mobile devices.
+     On smaller screens (below 768px), stack the columns vertically.
+     Adjust the font sizes and padding to improve readability on mobile.
+    
+*/
+
+/* ============ reset css =========== */
+
+*,
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    font-family: "Roboto",serif;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+body {
+
+    background-color: whitesmoke;
+    color: white;
+    min-height: 100vh;
+
+}
+
+::selection {
+
+    background-color: aquamarine;
+    color: black;
+
+}
+
+
+
+a {
+
+    text-decoration: none;
+
+}
+
+li {
+
+    list-style: none;
+
+}
+
+button {
+
+    border: none;
+    cursor: pointer;
+
+}
+
+/*  
+
+  ====================  header - start ==================== 
+
+*/
+
+.header {
+
+    background-color: #0a66c2;
+    width: 100%;
+    z-index: 111;
+
+}
+
+.header .box-layout {
+
+    padding: 0 10px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.header .box-layout .navbar {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+
+}
+
+  /*  ========  logo - start ======= */
+
+.header .box-layout .navbar .logo h1 {
+
+    text-transform: uppercase;
+
+}
+
+.header .box-layout .navbar .logo h1 a {
+
+    color: white;
+
+}
+
+/*  ========  logo - end ======= */
+
+/*  ========  nav - start ======= */
+
+
+
+.header .box-layout .navbar nav .nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.header .box-layout .navbar nav .nav > li {
+
+    padding: 7px;
+    font-size: 1.3em;
+
+}
+
+.header .box-layout .navbar nav .nav > li:active {
+
+    text-decoration: underline;
+
+}
+
+.header .box-layout .navbar nav .nav li a {
+
+    color: white;
+    
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown {
+
+    position: relative;
+
+}
+
+
+.header .box-layout .navbar nav .nav .dropdown .dropdown-menu {
+
+
+    position: absolute;
+    top: 34px;
+    left: -10px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    width: 120px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    transition: display 0.5s ease;
+
+}
+
+
+.header .box-layout .navbar nav .nav .dropdown:hover .dropdown-menu {
+
+    display: block;
+
+}
+
+
+.header .box-layout .navbar nav .nav .dropdown:hover .dropdown-menu li {
+
+    padding: 10px;
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown:hover .dropdown-menu li a {
+
+    color: #0a66c2;
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown:hover .dropdown-menu li:hover {
+
+    background-color: #0a66c2;
+    border-radius: 5px;
+
+
+}
+
+.header .box-layout .navbar nav .nav .dropdown:hover .dropdown-menu li:hover a {
+
+    color: white;
+
+}
+
+
+/*  ========  nav - end ======= */
+
+
+/*  ========  search - start ======= */
+
+
+.header .box-layout .navbar .search {
+
+    display: none; /* because set on media query */
+    /* display: flex; */
+    align-items: center;
+    gap: 10px;
+
+}
+
+.header .box-layout .navbar .search button {
+
+    width: 40px;
+    height: 40px;
+
+}
+
+
+.header .box-layout .navbar .search .btn1 {
+
+    border-radius: 5px;
+    background-color: white;
+    transition: scale .3s ease;
+
+}
+
+.header .box-layout .navbar .search .btn1:hover i {
+
+    scale: 1.1;
+
+}
+
+
+.header .box-layout .navbar .search .btn2 {
+
+    background-color: transparent;
+    font-size: 23px;
+    color: white;
+    transition: text-shadow 0.3s ease;
+
+}
+
+.header .box-layout .navbar .search .btn2:hover i {
+
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+
+}
+
+
+/*  ========  search - end ======= */
+
+
+/* ====================  header - end ====================  */
+
+
+/* ====================  content_section - start ====================  */
+
+
+
+.content_section .column {
+
+    padding: 30px;
+
+}
+
+.content_section .left {
+
+    flex: 30%;
+    background-color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+
+
+.content_section .left p {
+
+    text-align: justify;
+    line-height: 1.6;
+
+}
+
+
+.content_section .left .fakeImg {
+
+    height: 200px;
+    background-color: rgb(230, 221, 221);
+    display: grid;
+    place-content: center;
+    color: black;
+}
+
+
+
+.content_section .right {
+
+    flex: 70%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+
+}
+
+.content_section .right .services {
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+
+}
+
+/* ====================  content_section - end ====================  */
+
+
+
+/* ==================== footer - start ==================== */
+
+
+.footer {
+
+    padding: 10px;
+    background-color: #0a66c2;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+/* ==================== media query ==================== */
+
+
+/* =========== for mobile-screen max-width : 576px =========== */
+
+@media (max-width:576px) {
+
+    .header .box-layout .navbar .search {
+
+        display: none;
+     
+    
+    }
+
+    .header .box-layout .navbar .logo {
+
+        display: none;
+
+    }
+    .header .box-layout .navbar {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .header .box-layout .navbar .nav {
+
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .content_section .left p {
+
+        font-size: 2.5vw;
+
+    
+    }
+ 
+
+   
+    
+
+}
+
+
+/* =========== for mobile-screen = landscape mode , min-width : 576px =========== */
+
+@media (min-width:576px) {
+
+ 
+    .header .box-layout .navbar .logo {
+
+        display: none;
+
+    }
+
+    .content_section .left p {
+
+        font-size: 2.2vw;
+
+    
+    }
+
+
+    .content_section {
+
+        display: flex;
+        flex-direction: column;
+    
+    }
+   
+
+}
+
+/* ===========  for tablet screen min-width : 768px =========== */
+
+@media (min-width:768px) {
+
+
+    .header .box-layout .navbar .logo {
+
+        display: block;
+
+    }
+
+    .content_section .left p {
+
+        font-size: 1.7vw;
+    
+    }
+
+    .content_section {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+   
+  
+
+}
+
+/* =========== for mini laptop min-width : 992px =========== */
+
+@media (min-width:992px) {
+
+ 
+    .content_section .left p {
+
+        font-size: 1.4vw;
+    
+    }
+
+    .content_section .right .services li {
+
+        font-size: 1.4vw;
+    
+    }
+
+    .content_section .right p {
+
+        font-size: 1.4vw;
+    
+    }
+
+
+   
+
+}
+
+/* =========== for normal screen large screen min-width : 1200px =========== */
+
+@media (min-width:1200px) {
+
+    .header .box-layout .navbar .search {
+
+        display: flex;
+    
+    }
+
+    .content_section .left p {
+
+        font-size: 1.3vw;
+        word-spacing: 1px;
+
+    
+    }
+
+    .content_section .right .services li {
+
+        font-size: 1.4vw;
+    
+    }
+
+    .content_section .right p {
+
+        font-size: 1.5vw;
+    
+    }
+
+    
+    
+
+}
+
+
+
+
+/* =========== for extra large screen min-width : 1400px =========== */
+
+
+
