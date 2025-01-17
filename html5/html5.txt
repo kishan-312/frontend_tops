@@ -1,0 +1,106 @@
+// ============== Theory Assignment ================ //
+
+
+Question 1: Difference b/w HTML & HTML5?
+-->
+
+    Feature         HTML                                    HTML5
+    -------         ----                                    -----
+
+    version         HTML is the older version of markup     HTML5 is the latest version of HTML5
+                    language
+
+    
+    Multimedia      Limited support for multimedia          Directly supports <audio> and <video> 
+                    elements like audio and video           tags for multimedia
+
+
+    structure       Used <div> extensively for layout       Introduced newly semantic tags like 
+                                                            <header>, <nav>, <section>, <aside>,
+                                                            <article>, <address>, <footer> etc
+
+
+    offline         Relied on cookies for offline           Provides local and session storage for 
+    storage         storage                                 offline storage
+
+
+    form            Basic inputs like text,passwords        New inputs like email,date,color,range
+    enhancements
+
+
+    graphics        Required external plugins for           supporst <canvas> and <svg> for 2D and
+    support         graphics and animation                  vector graphics
+
+    
+    websocket       Not available                           Built-in websocket api for real-time    
+                                                            communication
+
+
+    Doctype         More complex <!DOCTYPE HTML PUBLIC       Simplified : <!DOCTYPE html>
+    Declaration     "-//W3C//DTD HTML 4.01//EN" "http:
+                    //www.w3.org/TR/html4/strict.dtd">
+
+
+    Browser         older browser only                       Design for modern web browser with
+    Compatibility                                            backward compatibility
+
+
+
+
+Question 2: What are the additional tags used in HTML5?
+-->
+
+    - HTML5 Introduced many additional tags to improve semantics, multimedia, graphics, animation, interactivity 
+    etc. Here's breakdown:
+
+    ** Semantic Tags **
+
+    - These tags give meaning to the content structure of the webpages
+
+    1. <header> - Defines the header of a webpage
+    2. <nav> - Represents the navigation links
+    3. <main> - Represents the main content of the document
+    4. <section> - Represents section of content
+    5. <aside> - Represents content related to the main content (sidebar)
+    6. <article> - Represents independent content that can stand alone 
+    7. <figure> - Groups media content like images,diagrams etc
+    8. <figcaption> - Provides a caption for the <figure> element
+    9. <time> - Represents specific points in time 
+
+    
+    ** Multimedia Tags **
+
+    1. <audio> - Embeds audio content
+    2. <video> - Embeds video content
+    3. <source> - Specifies multimedia sources for <audio> and <video>
+    4. <track> - Specifies text tracks for <video> (subtitles)
+
+
+    ** animation & graphics Tags **
+
+    1. <svg> - Defines scalable vector graphics (using HTML & CSS)
+    2. <canvas> - Used for drawing graphics via javascript
+
+
+    ** Form input enhancements Tags **
+
+    1. <input type="email"> : for email address
+    2. <input type="color"> : for choosing a color
+    3. <input type="date"> : for selecting a date
+    4. <input type="range"> : for creating slider
+
+
+    ** Other Tags **
+
+    1. <progress> : Represents task progress
+    2. <meter> : Represents scalar measurements within a known range
+    3. <details> : Creates a collapsible section
+    4. <summary> : provides summary for the <details> element
+    5. <mark> : highlights text
+    6. <dialog> : defines a dialog box or interactive component
+    
+    
+
+
+ 
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 (audio and video tag,svg and canvas) </title>
+    <link rel="icon" href="./favicon_io/favicon.ico">
+</head>
+<body>
+    <!-- 
+        Lab Assignment(Task)
+            Create a audio video tag
+             Also applied properties like muted loop autoplay
+             Create some shape using canvas tag in html
+             Create some shape using svg tag in html
+    -->
+
+
+    <!-- ======= audio ======= -->
+    <h2>Audio tag example</h2>
+    <audio controls muted loop autoplay >
+        <source src="./1.mp3" type="audio/mpeg" >
+    </audio>
+
+    <!-- ======= video ======= -->
+    <h2>Video tag example</h2>
+    <video controls muted loop autoplay width="400" >
+        <source  src="./v1.mp4" type="video/mp4" >
+    </video>
+
+    <!-- ======= svg ======= -->
+
+    <!-- rectangle -->
+    <svg width="200" height="100" style="border: 1px solid black;" >
+        <rect x="10" y="10" width="180" height="80" fill="blue" >
+    </svg>
+
+    <!-- circle -->
+    <svg width="100" height="100" style="border: 1px solid black;" >
+        <circle cx="50" cy="50" r="40" fill="red" >
+    </svg>
+
+    <!-- ellipse -->
+    <svg width="200" height="100" style="border: 1px solid black;" >
+        <ellipse cx="100" cy="50" fill="green" rx="80" ry="40" >
+    </svg>  
+
+    <!-- line -->
+    <svg width="200" height="100" style="border:1px solid black" >
+        <line x1="10" y1="50" x2="190" y2="90" stroke="red" stroke-width="2" >
+    </svg>
+
+    <!-- polygon -->
+    <svg width="200" height="200" style="border: 1px solid black;" >
+        <polygon points="100,10 40,198 190,78 10,78 160,198" fill="orange"/>
+    </svg>
+
+
+</body>
+</html>
