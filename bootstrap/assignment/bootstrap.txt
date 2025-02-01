@@ -1,0 +1,78 @@
+### ================ Theory assignment ================
+
+
+question 1: what are the advantages of bootstrap ?
+-->
+
+    - Bootstrap is a popular CSS framework that helps developers to create responsive and visually appealing
+    websites quickly . Here are some key advantages of using bootstrap :
+
+    1. Responsive Design
+    - Bootstrap's grid system ensures that websites look good on all screen sizes (mobile,tablet,laptop,desktop)
+    - It provides predefined classes for handeling different breakpoints.
+
+    2. Easy to use
+    - Developers can quickly setup a website using ready-made components.
+    - No need for deep CSS or JavaScript knowledge to create professional-looking design.
+
+    3. Pre-Designed components
+    - Comes with buttons,navigation bars,modals and more
+    - Saves time as you don't have to design these elements from scratch.
+
+    4. Cross-Browser Compatibility
+    - Works well on all major browsers like Chrome,Safari,Brave,Firefox etc
+    - Reduces the need for browser-specific fixes.
+
+    5. Customizable
+    - Allows modifications through Sass or CSS variables
+    - You can include only the required components to reduce file sizes.
+
+    6. Built-in JavaScript components
+    - Includes interactive elements like modals,tooltips and dropdowns.
+    - Reduces reliance on third-party js libraries
+
+    7. Large community & support
+    - well-documented with extensive guides and tutorials
+    - Large developer community for troubleshooting and support.
+
+    8. Integration with other technologies
+    - Works seamlessly with React,Angular and other framework.
+    - Supports both CSS and Sass for better styling options.
+
+
+question 2: What is boostrap container, and how does it work ?
+-->
+
+    - A container in bootstrap is a fundamental layout element used to wrap content and provides proper
+    alignment and spacing. It ensures that your content is responsive and adapts to different screen sizes
+
+    ----- Types of bootstrap container (how does it work) -----
+
+    - Bootstrap provides 3 types of container
+
+    1. .container (fixed-width container)
+    - centers the content and applies fixed width based on screen sizes
+    - On small screens : full width
+    - On larger screens : adapts to predefined screen sizes
+
+    2. .container-fluid (full width container)
+    - Ideal for fluid layouts where content should cover entire screen
+    - Always takes the full width of the viewport, regardless of the screen size.
+
+    3. .container-{breakpoints} (Responsive Container)
+    - Allows containers to be fluid until reaching a specific breakpoint.
+    - After the breakpoint, it behaves like a fixed container
+
+    example of md :
+    ---------------
+
+    - Before md breakpoint: Full width.
+    - At md and above: Behaves like .container.
+
+    - use .container if you want centered, responsive layout
+    - use .container-fluid if you want full-width container
+    - use .container-{breakpoint} if you want fluidity up to certain screen sizes
+
+
+
+

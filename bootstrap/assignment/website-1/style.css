@@ -1,0 +1,27 @@
+main .marketng .row .col-lg-4 .card > img {
+  transition: all 0.4s ease;
+}
+
+main .marketng .row .col-lg-4 .card > img:hover {
+  filter: brightness(70%);
+}
+
+
+.container .featurette div > h2 {
+
+    font-size: 50px;
+
+}
+
+.container .featurette .featurette-data {
+
+  margin-top: 80px;
+
+}
+
+.featurette-hr {
+
+  margin-top: 50px;
+
+}
+
