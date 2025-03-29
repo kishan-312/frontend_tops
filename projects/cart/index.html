@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- page title -->
+    <meta name="title" content="Cart" />
+
+    <!-- page description -->
+    <meta
+      name="description"
+      content="This is a cart create using HTML,CSS and JS "
+    />
+
+    <!-- SEO - keywords -->
+    <meta name="keywords" content="cart,HTML,CSS,JS " />
+
+    <!-- Author -->
+    <meta name="author" content="Kishan Mistry" />
+
+    <!-- Title -->
+    <title>Bakery Store</title>
+
+    <!-- Favicon - default -->
+    <link
+      rel="icon"
+      href="./assets/icons/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Favicon - browser tab -->
+    <link
+      rel="icon"
+      href="./assets/icons/favicon_io/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+
+    <!-- Favicon - browser bookmark -->
+    <link
+      rel="icon"
+      href="./assets/icons/favicon_io/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+
+    <!-- Favicon - android screen icon -->
+    <link
+      rel="icon"
+      href="./assets/icons/favicon_io/android-chrome-192x192.png"
+      type="image/png"
+      sizes="192x192"
+    />
+
+    <!-- Favicon - android screen icon -->
+    <link
+      rel="icon"
+      href="./assets/icons/favicon_io/android-chrome-512x512.png"
+      type="image/png"
+      sizes="512x512"
+    />
+
+    <!-- Favicon - apple screen icon -->
+    <link
+      rel="icon"
+      href="./assets/icons/favicon_io/apple-touch-icon.png"
+      type="image/png"
+      sizes="180x180"
+    />
+
+    <!-- Favicon - manifest -->
+    <link rel="manifest" href="./assets/icons/favicon_io/site.webmanifest" />
+
+    <!-- Google Fonts - for heading - oswald , paragraph - noto sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font-awesome icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logoContainer">
+        <div class="logo">
+          <img
+            src="./assets/images/bakery_light_mode.png"
+            alt="bakery"
+            class="light img"
+          />
+          <img
+            src="./assets/images/bakery_dark_mode.png"
+            alt="bakery"
+            class="dark img"
+          />
+        </div>
+        <span class="logo-text text-headline-small">bakery store</span>
+      </div>
+      <div class="themeCart">
+        <div class="theme-btn icon-btn" data-theme-btn>
+          <i class="light fa fa-solid fa-sun"></i>
+          <i class="dark fa fa-solid fa-moon"></i>
+          <div class="state-layer"></div>
+        </div>
+        <div class="cart">
+          <div data-cart>
+            <i class="fa fa-solid fa-cart-plus"></i>
+            <span data-cart-count class="cart-data">0</span>
+          </div>
+          <div class="cart-dropdown" data-cart-dropdown></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section container2">
+        <div class="card-container">
+          <div class="card">
+            <figure class="img-holder card-banner">
+              <img
+                src="./assets/images/img2.jpg"
+                class="img-cover card-cover"
+                alt="bakery-item2"
+              />
+            </figure>
+            <div class="card-data">
+              <h3>Chocolate Cupcake</h3>
+              <p data-cart-prize>Rs50.00</p>
+              <button data-cart-btn class="btn">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="img-holder card-banner">
+              <img
+                src="./assets/images/img3.jpg"
+                class="img-cover card-cover"
+                alt="bakery-item3"
+              />
+            </figure>
+            <div class="card-data">
+              <h3>Freshly Baked Bread</h3>
+              <p data-cart-prize>Rs30.00</p>
+              <button data-cart-btn class="btn">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="img-holder card-banner">
+              <img
+                src="./assets/images/img4.jpg"
+                class="img-cover card-cover"
+                alt="bakery-item4"
+              />
+            </figure>
+            <div class="card-data">
+              <h3>Glazed Donut</h3>
+              <p data-cart-prize>Rs45.00</p>
+              <button data-cart-btn class="btn">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="img-holder card-banner">
+              <img
+                src="./assets/images/img5.jpg"
+                class="img-cover card-cover"
+                alt="bakery-item5"
+              />
+            </figure>
+            <div class="card-data">
+              <h3>Vanila Cake</h3>
+              <p data-cart-prize>Rs150.00</p>
+              <button data-cart-btn class="btn">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="img-holder card-banner">
+              <img
+                src="./assets/images/img6.jpg"
+                class="img-cover card-cover"
+                alt="bakery-item6"
+              />
+            </figure>
+            <div class="card-data">
+              <h3>Chocolate Chip Cookies</h3>
+              <p data-cart-prize>Rs80.00</p>
+              <button data-cart-btn class="btn">Add To Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="img-holder card-banner">
+              <img
+                src="./assets/images/img7.jpg"
+                class="img-cover card-cover"
+                alt="bakery-item7"
+              />
+            </figure>
+            <div class="card-data">
+              <h3>Butter Crossiant</h3>
+              <p data-cart-prize>Rs150.00</p>
+              <button data-cart-btn class="btn">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
