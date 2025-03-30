@@ -1,0 +1,2 @@
+Question 1: Explain the different types of loops in JavaScript (for, while, do-while). Provide abasic
+example of each.

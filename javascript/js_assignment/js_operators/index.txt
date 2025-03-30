@@ -1,0 +1,56 @@
+//// Theory Assignment
+
+Question 1: What are the different types of operators in JavaScript? Explain with examples.
+• Arithmetic operators
+• Assignment operators
+• Comparison operators
+• Logical operators
+
+--> different types of operators :
+
+1. Arithmetic operators (Mathematical calculation)
+
+ - + (addition) : a + b = 5
+ - - (subtraction) : a - b = 1
+ - * (multiplication) : a * b = 6
+ - / (divison) : a / b = 1.5
+ - % (modulus) : a % b = 1
+ - ** (exponentiation) : a ** b = 9
+ - ++ (increment) : a++ = 3
+ - -- (decrement) : b-- = 2
+
+2. Assignment operators (assign values to variables)
+
+- =	x = 5	x = 5	5
+- +=	x += 5	x = x + 5	15
+- -=	x -= 5	x = x - 5	5
+- *=	x *= 2	x = x * 2	20
+- /=	x /= 2	x = x / 2	5
+- %=	x %= 3	x = x % 3	1
+- **=	x **= 2	x = x ** 2	100
+
+
+3. Comparison operators (Comapre Values)
+Operator	Name	Example (a = 10, b = 5)	Output
+==	Equal to	a == 10	true
+===	Strict equal to (checks type)	a === "10"	false
+!=	Not equal to	a != b	true
+!==	Strict not equal to	a !== "10"	true
+>	Greater than	a > b	true
+<	Less than	a < b	false
+>=	Greater than or equal to	a >= 10	true
+<=	Less than or equal to	b <= 5	true
+
+
+4. Logical Operator (Boolean Logic)
+a=7
+&&	AND	(a > 5 && b < 10)	true
+||	OR  (a > 5 || b < 10) true
+!	NOT	!(a === 10)	false
+
+Question 2: What is the difference between == and === in JavaScript?
+--> 
+
+== compares values only , === compares both value and type 
+== performs type conversion , === doesn't performs type conversion
+

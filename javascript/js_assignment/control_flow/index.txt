@@ -1,0 +1,54 @@
+Question 1: What is control flow in JavaScript? Explain how if-else statements work withan
+example.
+-->
+- Control flow in JavaScript refers to the order in which statements are executed in a program.
+By default, JavaScript executes code from top to bottom, but we can control this flow using conditional statements, 
+loops, and functions.
+
+- if-else Statement in JavaScript
+The if-else statement is used to execute different blocks of code based on conditions.
+
+- Syntax of if-else
+
+if (condition) {
+    // Code runs if condition is true
+} else {
+    // Code runs if condition is false
+}
+
+
+let num = 10;
+
+if (num > 0) {
+    console.log("The number is positive.");
+} else {
+    console.log("The number is negative or zero.");
+}
+
+
+Question 2: Describe how switch statements work in JavaScript. When should you use a
+switch statement instead of if-else ?
+
+--> The switch statement is used to execute different blocks of code based on a specific value.
+It is an alternative to multiple if-else if statements when checking a single variable against multiple possible values.
+
+- Syntax of switch
+
+switch (expression) {
+    case value1:
+        // Code executes if expression === value1
+        break;
+    case value2:
+        // Code executes if expression === value2
+        break;
+    default:
+        // Code executes if no cases match
+}
+
+- When to Use switch Instead of if-else :
+
+Use if-else When	                                Use switch When
+- Comparing ranges (e.g., if (age > 18))	          Comparing a single value to multiple cases
+- Conditions involve complex logic                    There are many fixed options (e.g., menu choices, days of the week)
+(e.g., multiple variables)	
+
