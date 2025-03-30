@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="" class="container" id="bookingForm">
+      <h2>Restaurant Booking Form</h2>
+      <div class="input-box">
+        <label for="booking">Choice Of Booking :</label>
+        <select name="booking" id="booking" required>
+          <option>--- select ---</option>
+          <option value="full-day">Full Day Booking</option>
+          <option value="half-day">Half Day Booking</option>
+          <option value="hourly">Hourly Booking</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="userName">User Name :</label>
+        <input
+          type="text"
+          placeholder="Enter Your Name"
+          id="userName"
+          required
+        />
+      </div>
+      <div class="input-box">
+        <label for="mobileNo">Mobile No :</label>
+        <input
+          type="tel"
+          placeholder="Enter Your Mobile Number"
+          id="mobileNo"
+          required
+        />
+      </div>
+      <div class="input-box">
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          placeholder="Enter Your Email"
+          id="email"
+          required
+        />
+      </div>
+      <div class="input-box">
+        <label for="num">No Of Persons :</label>
+        <input
+          type="number"
+          min="1"
+          placeholder="Number Of Persons"
+          id="num"
+          required
+        />
+      </div>
+      <div class="input-box2" id="dynamic-fields"></div>
+      <button class="btn" type="submit">Book Now</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
