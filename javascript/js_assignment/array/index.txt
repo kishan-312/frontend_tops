@@ -1,0 +1,72 @@
+////// Theory Assignment /////
+
+
+Question 1: What is an array in JavaScript? How do you declare and initialize an array?
+--> 
+ 
+    An array in JavaScript is a special type of object that can store multiple values in a single variable.
+    Arrays allow you to group related data together and access elements using an index.
+
+    - Declaring and Initializing an Array :
+
+    1. const Array1 = ["audi","bmw","omni","thar","swift] ;
+    2. const Array2 = new Array("audi","bmw","omni","thar","swift") ;
+    3. const Array3 = [] ;
+    Array3[0] = "audi" ;
+    Array3[1] = "bmw" ;
+    Array3[2] = "omni" ;
+
+
+
+Question 2: Explain the methods push(), pop(), shift(), and unshift() used in arrays.
+--> 
+
+    JavaScript provides built-in methods to add or remove elements from arrays dynamically.
+
+1. push() – Adds an Element to the End
+The push() method adds one or more elements to the end of an array.
+
+It returns the new length of the array.
+
+- Example:
+
+let fruits = ["Apple", "Banana"];
+fruits.push("Cherry"); 
+console.log(fruits);
+
+2. pop() – Removes the Last Element
+The pop() method removes the last element from an array.
+
+It returns the removed element.
+
+- Example:
+
+let fruits = ["Apple", "Banana", "Cherry"];
+let lastFruit = fruits.pop();
+console.log(fruits); 
+console.log(lastFruit);
+
+3. shift() – Removes the First Element
+The shift() method removes the first element of an array.
+
+It returns the removed element.
+
+- Example:
+
+let fruits = ["Apple", "Banana", "Cherry"];
+let firstFruit = fruits.shift();
+console.log(fruits); 
+console.log(firstFruit); 
+
+4. unshift() – Adds an Element to the Beginning
+The unshift() method adds one or more elements to the beginning of an array.
+
+It returns the new length of the array.
+
+📌 Example:
+
+let fruits = ["Banana", "Cherry"];
+fruits.unshift("Apple");
+console.log(fruits);
+
+

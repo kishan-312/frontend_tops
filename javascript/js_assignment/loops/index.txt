@@ -1,2 +1,83 @@
 Question 1: Explain the different types of loops in JavaScript (for, while, do-while). Provide abasic
 example of each.
+--> Loops are used to execute a block of code repeatedly until a condition is met. 
+JavaScript has three main types of loops:
+
+- for Loop
+- while Loop
+- do-while Loop
+
+
+1. for Loop
+The for loop runs a block of code a fixed number of times.
+
+- Syntax
+
+for (initialization; condition; update) {
+    // Code to be executed
+}
+Initialization: Declares and initializes a loop variable.
+
+Condition: The loop runs while this condition is true.
+
+Update: Changes the loop variable after each iteration.
+
+- Example: Print numbers 1 to 10
+
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+2. while Loop
+The while loop executes as long as the condition is true. 
+It is useful when the number of iterations is not known beforehand.
+
+- Syntax
+
+while (condition) {
+
+}
+- Example: Print numbers 1 to 5
+
+let i = 1;
+while (i <= 5) {
+    console.log(i);
+    i++;  
+}
+
+3. do-while Loop
+The do-while loop executes the code at least once, even if the condition is false.
+
+- Syntax
+
+do {
+} while (condition);
+- Example: Print numbers 1 to 5
+
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+
+
+Question 2: What is the difference between a while loop and a do-while loop?
+--> 
+    Both while and do-while loops execute a block of code while a condition is true, 
+    but there is a key difference in when the condition is checked.
+
+    1. while Loop
+    -  Condition is checked first → If false, the loop does not execute at all.
+    while (condition) {
+    // Code executes only if condition is true
+    }
+
+    2. do-while Loop
+    - Code executes at least once, then the condition is checked.
+
+    Syntax
+
+    do {
+        // Code executes at least once
+    } while (condition);
+
