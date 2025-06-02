@@ -67,4 +67,7 @@ JavaScript file to an HTML document?
 Instead of writing JavaScript inside the HTML file, you can store it in a separate file and link it using the <script> 
 tag with the src attribute.
 
- <script src="script.js"></script> 
+<script src="script.js"></script> 
+
+
+
