@@ -1,0 +1,70 @@
+Question 1: What is React.js? How is it different from other JavaScript frameworks and
+libraries?
+
+--> React.js is JavaScript library developed by facebook for building user interfaces, especially for 
+single page appications. it allow developers to create resuable ui components 
+
+-> features of React.js
+1. Component based architecture
+2. virtual dom 
+3. one way data binding
+4. JSX syntax
+
+-> React vs others frameworks and library 
+1. react - component based architecture , Angular - full frameworks, Vue - component based architecture
+2. react - Virtual DOM , Angular - Real DOM, Vue - Virtual DOM
+3. react - One Way data binding , Angular - Two Way data binding, Vue - Two Way data binding
+4. react - single page applications , Angular - Large scale  applications, Vue - Single Page appications
+
+
+Question 2: Explain the core principles of React such as the virtual DOM and component based architecture.
+
+--> 1. Component Based Architecture :
+
+    -> React breaks ui (user interface) into small ,resuable pieces called components. each component is like
+    block that contains HTML,CSS and JS 
+    -> resuable : write once use multiple times , easier maintain
+
+2. Virtual DOM
+
+-> virtual DOM is like copy of real webpage that React keeps in memory.
+
+-> virtual DOM works like below : 
+  1. you change something (like typing in a form).
+  2. React creates new virtual DOM (memory copy).
+  3. it compares new and old virtual dom.
+  4. it finds what changed.
+  5. it updates only that parts on real DOM .
+
+-> The Virtual DOM is a smart helper. It checks what changed in your app and updates only those parts on the 
+real screen, making your app fast and smooth.
+
+Question 3: What are the advantages of using React.js in web development?
+
+--> Advantages of React.js
+
+1. Component Based Architecture
+-> react breaks ui  into small, resuable parts
+-> makes code organized and easily maintained
+
+2. Fast Performance with virtual DOM
+-> React uses virtual dom to updates only the parts the changed.
+-> make app fast 
+
+3. one way data flow
+-> Data flows in one direction - from parent to child 
+
+4. supports modern js features
+
+
+
+
+
+
+
+
+
+
+
+
+

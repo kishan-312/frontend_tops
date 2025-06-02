@@ -1,0 +1,27 @@
+Question 1: What is JSX in React.js? Why is it used? 
+
+--> jsx stands for  JavaScript xml 
+
+-> this jsx lets u write HTML like code inside JavaScript - specifically inside react components
+
+
+Question 2: How is JSX different from regular JavaScript? Can you write JavaScript inside JSX?
+--> jsx = HTML inside JavaScript .
+--> js = only JavaScript syntax
+
+--> jsx = u can create reusable components 
+--> js = used for logic,functions 
+
+-> yes, u can write JavaScript inside JSX 
+-> const name = "kishan" ;
+-> const element = <h1> hello {name}! </h1>
+
+
+
+Question 3: Discuss the importance of using curly braces {} in JSX expressions.
+
+--> using {} u can embed js expressions inside HTML like code
+
+
+
+

@@ -1,0 +1,64 @@
+Question 1: What are props in React.js? How are props different from state?
+--> 
+    props : are ways to pass data from one component to another component , especially from parent to child 
+    component
+
+    function Greeting(props) {
+        return <h1>Hello, {props.name}!</h1>;
+    }
+
+    state : is way to store and manage data that can change inside component 
+
+    summary : props -> send data to component, state -> store data inside component that can change over a time.
+
+
+Question 2: Explain the concept of state in React and how it is used to manage componentdata.
+--> 
+
+   -> in React, state is built in object that is used to store data about component.
+   -> it helps you make components dynamic and interactive 
+   -> It helps you respond to user actions like button clicks, form inputs, etc.
+
+    import React, { useState } from 'react';
+
+    function Counter() {
+    const [count, setCount] = useState(0); // count is state
+
+    return (
+
+        <div>
+        <p>You clicked {count} times</p>
+        <button onClick={() => setCount(count + 1)}>
+            Click me
+        </button>
+        </div>
+
+    );
+    }
+
+    -> state lifecycle : 1. intialize : with useState 2. update : using setState() 3. Re-render : components 
+       updates automatically 
+
+
+Question 3: Why is this.setState() used in class components, and how does it work?
+--> 
+
+    -> In class components, this.setState() is used to update the state of a component.
+
+    -> You should not change state directly using this.state = ....
+
+    -> Instead, always use this.setState() so React knows the state has changed and can re-render the UI.
+
+     How does it work ?
+
+    -> this.setState() takes a new state object or a function.
+
+    -> It merges the new state with the current state.
+
+    -> Then, React automatically re-renders the component to show updated data.
+
+
+
+
+
+
