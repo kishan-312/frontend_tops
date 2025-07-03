@@ -1,0 +1,61 @@
+==============  Lists and Keys ==============
+
+Question-1 : How do you render a list of items in React? Why is it important to use keys when
+rendering lists?
+
+---> you can render lists of items using map() function :
+
+    example ====
+    
+    const fruits = ['Apple', 'Banana', 'Mango'];
+
+    function FruitList() {
+    return (
+        <ul>
+            {fruits.map((fruit, index) => (
+                <li key={index}>{fruit}</li>
+            ))}
+        </ul>
+        );
+    }
+
+    =====
+
+    -- using key react identify which items have changed, added or removed .
+
+        example ====
+
+        const users = [{ id: 1, name: 'Kishan' },{ id: 2, name: 'Chintan' }];
+
+        function UserList() {
+            return (
+                <ul>
+                {users.map(user => (
+                    <li key={user.id}>{user.name}</li>
+                ))}
+                </ul>
+            );
+        }
+
+        =====
+
+Question 2: What are keys in React, and what happens if you do not provide a unique key?
+
+--->  
+    - using keys u can identify elements in a list.
+    - help react to which items changed, added, removed during re-rendering.
+
+    React uses keys to : 
+    - efficiently update the ui 
+    - avoid re-rendering the entire list - only changed items are updated 
+    - maintain component state properly during list operations.
+
+
+    if you don't provide unique key then : 
+    - React will warn you in console 
+    - React will fallback to index-based rendering which can cause :
+        1. incorrect reordering
+        2. lost component state 
+        3. slower performance 
+
+

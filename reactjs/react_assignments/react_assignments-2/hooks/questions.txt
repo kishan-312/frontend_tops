@@ -1,0 +1,136 @@
+===== Hooks (useState, useEffect, useReducer, useMemo, useRef, useCallback) =====
+
+
+Question 1: What are React hooks? How do useState() and useEffect() hooks work in
+functional components?
+
+---> 
+    - Hooks are special functions 
+    - u can use features like state and lifecycles due to hooks 
+    - hooks works only inside functional components or custom hooks
+    - hooks must be called at the top level of function
+
+    1. useState()
+    - adds state to functional components
+    - store and update states 
+
+    syntax : const [state,setState] = useState(intialValue) ;
+
+    2. useEffect()
+    - handle side effects like data fetch, timers
+    - runs side effects in components 
+
+    syntax : useEffect(() => {
+
+        // write side effects logics here 
+
+        return () => {
+
+            // optional for cleanup code 
+
+        }
+
+    }, [dependencyArray] )
+
+
+Question 2: What problems did hooks solve in React development? Why are hooks
+considered an important addition to React?
+
+---> 
+
+    - Before hooks, React used :
+     
+    1. before hooks class components used to manage state and lifecycles.
+    - state and lifecycle method only available in class components .
+    - hooks allow state and lifecycle in functional components 
+
+    2. confusing this keyword 
+    - in class components this need to be bound manually in constructors 
+    - hooks works inside functions , so no this binding is required
+
+    3. simpler components
+    - hooks allow break logics into smaller functions 
+
+    4. too much boilerplates 
+    - class components required long syntax 
+
+    ==== 
+
+    Hooks are important because : 
+
+    1. easier to write and read compared to classes 
+    2. group related logics together with hooks
+    3. you can build entire apps with functional components 
+
+
+Question 3: What is useReducer ? How we use in react app?
+--->
+    - useReducer is react hook used for state management like usestate but more powerful 
+
+    syntax : 
+    const [state,dispatch] = useReducer(reducerFunction,initialState) ;
+
+    - state = current state value
+    - dispatch = function to send actions to reducer 
+    - reducerFunction = functions that handles actions and returned updated state
+
+
+Question 4: What is the purpose of useCallback & useMemo Hooks?
+---> 
+
+    - react re-renders components when state or props changed  , during each re-render function get recreated,
+    values get re-executed 
+
+    1. useCallback 
+    - prevents functions from being recreated on every render unless its dependencies change.
+
+    example.  
+    const memoizedFn = useCallback(() => {
+        // logic here
+    }, [dependencies]);
+
+    - use usecallback when passing functions to child components 
+    - so usecallback memoizes function 
+    - you're passing function as prop or using it in dependencies array 
+
+    2. useMemo 
+    - prevents recalculations on every renders by remembering results until dependencies changes 
+
+      const memoizedValue = useMemo(() => {
+         return expensiveComputation(input);
+      }, [input]);
+
+    - useMemo  remember computed value 
+
+    ======
+
+    Note == Only use useCallback and useMemo for performance optimization.
+    Don’t overuse them—if your component renders quickly without them, 
+    they may add unnecessary complexity. ===
+
+
+Question 5: What’s the Difference between the useCallback & useMemo Hooks?
+--->
+
+    useCallback             vs           useMemo 
+
+1. returns memoized fun                - returns memoized value or result
+2. used to avoid fun recreation        - used to avoid recalculating values 
+3. useful in event listener            - useful in filtering, sorting etc. 
+
+
+
+Question 6 : What is useRef ? How to work in react app?
+
+--> 
+  - useRef is react hook that creates mutable reference object.
+  - u can access and persist values without causing re-renders 
+  - u can access dom elements 
+  - stores values like previous state 
+  - track mutable values across renders 
+
+  syntax :
+  const myRef = useRef(initialvalue ) ;
+
+  -- so useRef usecases is access dom, persist values, track previous state 
+
