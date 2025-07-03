@@ -31,7 +31,7 @@ function App() {
             </button>
           </div>
           <p className="mt-3">
-            🔁 <strong>Component Rendered:</strong> {renderCount.current} times
+            Component Rendered: {renderCount.current} times
           </p>
         </div>
       </div>
