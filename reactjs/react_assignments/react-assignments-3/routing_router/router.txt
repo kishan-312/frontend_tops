@@ -1,0 +1,52 @@
+Question 1: What is React Router? How does it handle routing in single-page applications ?
+-->    
+    - React Router is standard routing library for react.
+    - it enables navigation between different pages in SPA without refreshig browser.
+
+
+    --> single-page applications the entire app runs on single html page. react router handeles
+        routing on the client side. 
+
+        1. url changes are handled in browser without sending requests to the server .
+        2. it uses history api to manipulate the browser url. 
+        3. it renders correct react component based on the current url, without refreshing the page.
+       
+    
+Question 2: Explain the difference between BrowserRouter, Route, Link, and Switch
+components in React Router.
+-->
+
+    1. BrowserRouter : wraps your app and enabled routing
+    ex. 
+
+    import { BrowserRouter } from "react-router-dom";
+    <BrowserRouter>
+    {/* all routes/components go here */}
+    </BrowserRouter>
+    
+    2. Route : defines what to render for given path 
+
+    import { Route } from "react-router-dom";
+
+    <Route path="/about" component={AboutPage} />
+
+
+    3. Link : create navigation links
+
+    import { Link } from "react-router-dom";
+
+    <Link to="/about">About</Link>
+
+
+    4. Switch : ensures that only the first matching route renders 
+
+    import { Switch, Route } from "react-router-dom";
+
+    <Switch>
+    <Route path="/about" component={AboutPage} />
+    <Route path="/contact" component={ContactPage} />
+    </Switch>
+
+
+
+
